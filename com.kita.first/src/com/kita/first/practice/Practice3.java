@@ -2,7 +2,6 @@ package com.kita.first.practice;
 
 public class Practice3 {
 
-	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		//n1()n2 
 		int n1 =10;
@@ -23,15 +22,16 @@ public class Practice3 {
 		System.out.println(result4);
 		System.out.println(result5);
 */
-		int result0[] = null;
+		int result0[] = {};
 		for(int i=0; i<5; i++) {
 			if(i==0) {
 				result0[i] = n1+=n2;
 				n1 = 10;
 			}
 			else if(i==1) {
-				result0[i] = n1-=n2;
 				n1 = 10;
+				result0[i] = n1-=n2;
+				
 			}
 			else if(i==2) {
 				result0[i] = n1*=n2;
@@ -46,7 +46,7 @@ public class Practice3 {
 			}
 		}
 		for(int i=0; i<5; i++) {
-			System.out.println(result0[i]);
+			System.out.printf("%d", result0[i]);
 	
 		}
 	}
