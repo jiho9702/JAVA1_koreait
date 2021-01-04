@@ -10,7 +10,7 @@ public class Practice8 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("몇월인지 입력해주세요(1~12월)");
 		String month = sc.next();
-		String season;
+		String season = "";
 		switch(month) {
 		case "3": case "4": case "5":
 			season = "봄";
