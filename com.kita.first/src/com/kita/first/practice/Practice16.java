@@ -33,30 +33,29 @@ public class Practice16 {
 		String menu;
 		
 		do{
-			int rNum = (int)(Math.random()*6) + 1;
+			int rNum = (int)(Math.random()*3) + 1;
 			
 			if(rNum == 1) {
 				menu = "치킨";
 			}else if(rNum == 2) {
 				menu = "피자";
-			}else if(rNum == 3) {
+			}else {
 				menu = "보쌈";
-			}else if(rNum == 4) {
-				menu = "떡볶이";
-			}else if(rNum == 5) {
-				menu = "회초밥";
-			}else{
-				menu = "스테이크";
-			}
+			}			
 			System.out.println("뽑힌 메뉴 : " + menu);	
 			System.out.print("마음에 듭니까?(Y/N)");
 			String result = sc.next();
 			if("Y".equals(result)) {
 				break;
+			}else if("N".equals(result)) {
+				System.out.println("다시 뽑습니다.");
+			}else {
+				System.out.println("잘못된 문자를 입력했습니다.");
 			}
 			
 		}while(true) ;
-			System.out.println("오늘의 메뉴는"+menu+"입니다");
+			
+		System.out.println("오늘의 메뉴는"+menu+"입니다");
 		
 		sc.close();
 	}
