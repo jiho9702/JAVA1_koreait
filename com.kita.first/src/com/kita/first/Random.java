@@ -12,8 +12,6 @@ public class Random {
 		
 		int num3 = (int)(Math.random()*10)+1; // 1~10
 		System.out.println(num3);
-//		srand(time(NULL));
-//		rand()
 
 	}
 

@@ -10,14 +10,13 @@ public class PracticeHomework {
 		int i=1;
 		
 		while(i<=100) {
-			sum += i;
-			i++;
+			sum += i++;
 		}
-		System.out.printf("합계 : %d", sum);
+		System.out.printf("합계 : %d\n", sum);
 		
 		sum=0;
 		for(int z=1; z<=100; z++) {
-			sum += i;
+			sum += z;
 			
 		}System.out.printf("합계 : %d", sum);
 	}

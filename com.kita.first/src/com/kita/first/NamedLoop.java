@@ -1,6 +1,7 @@
 package com.kita.first;
 
 public class NamedLoop {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		Parent:
