@@ -43,8 +43,8 @@ public class Calc {
 	//void 형일때는 이렇게 생겼다.
 	//void는 리턴(값을 돌려준다)을 해주지 않는다.
 	//비 보이드형 => public static int(리턴 형식) sum(){
-	//		return (리턴 해줘야 하는 변수);
-	//}
+	//					return (리턴 해줘야 하는 변수);
+	//			 }
 	
 	public int sum(int n1, int n2) {
 		int result = n1+n2;
