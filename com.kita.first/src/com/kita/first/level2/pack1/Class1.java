@@ -1,7 +1,7 @@
 package com.kita.first.level2.pack1;
 
 public class Class1 {
-	private int n1;
+	int n1;
 	int n2;
 	
 	public Class1() {

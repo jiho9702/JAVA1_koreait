@@ -4,13 +4,14 @@ import com.kita.first.level2.hyori.LeeHyoRi;
 
 public class Hwasa extends LeeHyoRi{
 	
-	public Hwasa(){ //디폴트는 프로텍티드를 붙이지 않으면 접근 불가능하다.
-		super("인스타");
+	public Hwasa(){ //디폴트는 프로텍티드를 붙이지 않으면 접근 불가능하다.  자식클래스의 생성자 안에 super()를 통해서 접근가능하다.
+		super("인스타");  //부모클래스를 가리긴다.
 		this.sns = "";
 		this.music="";
-//		this.star = ;
+//		this.star = 12;
+//		super.sns = "";
 		
-		this.drinkTea();
+		drinkTea();
 	}
 	
 	public static void main(String[] args) {
@@ -26,5 +27,4 @@ public class Hwasa extends LeeHyoRi{
 //		hr.drinkTea();
 //		hr.dance();
 	}
-
 }

@@ -1,8 +1,8 @@
 package com.kita.first.level2;
 
-////import com.kita.first.level2.mamamoo.Hwasa;
+//import com.kita.first.level2.mamamoo.Hwasa;
 //import com.kita.first.level2.mamamoo.*;/*  *은 전체를 뜻한다    */
-////import com.kita.first.level2.* /*   클래스만 가져올수 있다.*/
+//import com.kita.first.level2.* /*   클래스만 가져올수 있다.*/
 //
 //import com.kita.first.level2.hyori.*;
 
@@ -23,7 +23,7 @@ public class Test {
 		System.out.println(car1Color);
 		
 		car1.setColor("파란색");
-		car1Color = car1.getColor()
+		car1Color = car1.getColor();
 		System.out.println(car1Color);
 	}
 }

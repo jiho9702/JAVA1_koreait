@@ -3,9 +3,9 @@ package com.kita.first.level2.hyori;
 public class LeeHyoRi {	
 
 	//필드
-	public String music;
-	protected String sns;
-	private int star;
+	public String music;    //어디서든 사용가능하다.
+	protected String sns;   //디폴트 상태의 필드는 동일 패키지 내부에서만 사용, protected도 동일패키지에서 사용가능. 또한 상속을 받게되면 사용가능하다.
+	private int star;		//클래스 내부에서만
 	
 	//생성자
 	public LeeHyoRi() {}

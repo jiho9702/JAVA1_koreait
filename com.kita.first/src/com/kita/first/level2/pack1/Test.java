@@ -26,8 +26,6 @@ public class Test {
 		FinalStatic fs = new FinalStatic(1, 2);
 		fs.printNum(1);
 		
-		Scanner sc = new Scanner(System.in);
-		
 		Class1 c1 = new Class1(1, 2);
 		System.out.println(c1.n1);
 		System.out.println(c1.n2);
