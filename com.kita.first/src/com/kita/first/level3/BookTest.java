@@ -5,7 +5,7 @@ public class BookTest {
 		
 		Student minsu = new Student();
 		
-		for(int i=1; i<5; i++) {
+		for(int i=1; i<=20; i++) {
 			int result = minsu.readBooks();
 			switch(result) {
 			case 1: //민수가 book1을 다 읽었을 경우

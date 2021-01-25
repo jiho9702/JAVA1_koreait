@@ -23,7 +23,7 @@ public class Student {
 	}
 	
 	void stopRead() {
-		System.out.println("책을 그만 읽습니다.");
+		System.out.println("책을 그만 읽습니다");
 	}
 		
 }

@@ -9,7 +9,7 @@ public class ComicBook extends Book{
 	@Override
 	boolean read() {
 		++chapter;
-		if(chapter < maxChapter) {
+		if(chapter <= maxChapter) {
 			System.out.println("만화책을 읽는다.");
 			return true;
 		}else {

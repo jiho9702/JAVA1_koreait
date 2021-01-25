@@ -15,7 +15,14 @@ public class Test {
 		
 		animal = new Dog();  //부모자식간에서만 사용가능하다.  부모타입의 변수 안에는 자식타입의 변수를 넣어도 알아서 형변환을 시켜준다.  다형성
 		animal.crying();
-//		animal.barking();  //애니멀타입의 통로를 통해서 도그타입으로 들어가는것이라 애니멀에 없는것필드 혹은 메소드를 실행하려하면 되지않는다.  animal to animal's method to dog
+		
+		boolean result = animal instanceof Dog;  //animal이 dog타입 객체의 인스턴스인지 확인하는
+		System.out.println(result);
+		
+		Dog dog1 = (Dog)animal; //객체의 강제형변환..  자식객체를 부모타입에 넣었을때에만 가능하다.
+		dog1.barking();  //애니멀타입의 통로를 통해서 도그타입으로 들어가는것이라 애니멀에 없는것필드 혹은 메소드를 실행하려하면 되지않는다.  animal to animal's method to dog
+		
+		//instanceof
 		
 //		System.out.println(animal);
 //		System.out.println(cat);

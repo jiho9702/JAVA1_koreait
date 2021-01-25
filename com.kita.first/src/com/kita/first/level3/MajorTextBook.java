@@ -8,7 +8,7 @@ public class MajorTextBook extends Book{
 	@Override
 	boolean read() {
 		++chapter;
-		if(chapter < maxChapter) {
+		if(chapter <= maxChapter) {
 			System.out.println("전공서적을 읽는다.");
 			return true;
 		}else {

@@ -9,7 +9,7 @@ public class Book {
 	}
 	boolean read() {
 		++chapter;
-		if(chapter < maxChapter) {
+		if(chapter <= maxChapter) {
 			System.out.println("책을 읽는다.");
 			return true;
 		}else {
