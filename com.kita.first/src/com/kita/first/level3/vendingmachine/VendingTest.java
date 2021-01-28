@@ -48,7 +48,7 @@ public class VendingTest {
 			myNum = game.inputNum();
 			
 			//입력받은 번호 분기 가르기 기능
-			if(myNum<1 || myNum>6) {
+			if(myNum<0 || myNum>6) {
 				System.out.println("범위 내의 숫자를 입력하세요.");
 				continue;
 			} else if(myNum == 0) {

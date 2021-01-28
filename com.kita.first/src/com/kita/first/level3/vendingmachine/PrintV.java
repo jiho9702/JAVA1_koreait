@@ -4,7 +4,6 @@ public class PrintV {
 	
 	//메뉴 이름과 가격 찍기  .,.
 	void printMenu(Menu menu, int n){
-		System.out.println("--메뉴--");
 		
 		String item = menu.getMenuItem(n-1);
 		int price = menu.getMenuPrice(n-1);

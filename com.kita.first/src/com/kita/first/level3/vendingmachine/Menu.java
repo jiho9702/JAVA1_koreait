@@ -42,7 +42,7 @@ public class Menu {
 			String str = scan.next();
 			menuArr[i] = str;
 		}
-		scan.close();
+		
 	}
 	//가격 배열에 순차적으로 값 입력
 	void inputArrPrices() {
@@ -58,7 +58,7 @@ public class Menu {
 			}			
 			priceArr[i] = num;
 		}
-		scan.close();
+		
 	}
 	
 	
