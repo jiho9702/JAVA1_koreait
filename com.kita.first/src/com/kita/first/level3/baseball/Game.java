@@ -8,30 +8,14 @@ public class Game {  //야구게임 실행 클래스
 		Baseball ball = new Baseball(gameCnt);
 		MyBall myBall = new MyBall(gameCnt);
 		
-		ball.randNum(gameCnt);
-		ball.printNum(gameCnt);
+		ball.printNum();
 		
 		do {
-			myBall.setNumbers(gameCnt);
+			myBall.setNumbers();
 		}while(Checker.check(gameCnt, ball, myBall));
 		
-		
-		
-//		final int LEN = 3;
-//		
-//		Baseball rand = new Baseball(LEN);
-//		MyBall my = new MyBall(LEN);
-//		
-//		rand.randNum(LEN);
-//		rand.printNum(LEN);
-//		
-//		my.myNum(LEN);
-//		
-//		Checker check = new Checker(LEN);
-//		
-//		while(true) {
-//			check.sCount(LEN);
-//			check.bCount(LEN);
+		System.out.println("야구게임 종료");
+	
 	}
 }
 

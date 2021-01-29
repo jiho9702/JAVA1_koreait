@@ -1,33 +1,27 @@
 package com.kita.first.level3.baseball;
 
 public class Checker {  //스트라이크 볼 아웃의 수를 세어주는 클래스
-	
-	public Checker(int gameCnt) {
-		
-	}
 
 	public static boolean check(int gameCnt, Baseball ball, MyBall myBall) {
-		int sCount = 0;
-		int bCount = 0;
+		int s = 0;
+		int b = 0;
+		int o = 0;
 		
 		for(int i=0; i<gameCnt; i++) {
-			if( MyBall.myArr[i]== Baseball.rArr[i]) {
-				sCount++;
-			}
-		}
-		for(int i=0; i<gameCnt; i++) {		
 			for(int z=0; z<gameCnt; z++) {
-				if(MyBall.myArr[i]== Baseball.rArr[i]) {
-					continue;
-				}else if(MyBall.myArr[i]== Baseball.rArr[i]){
-					bCount++;
+				if(ball.getRNum(i) == myBall.getMyNum(z)) {
+					if(i == z) {
+						s++;
+					}else {
+						b++;
+					}
 				}
 			}
 		}
+		o = gameCnt -(s+b);
+		System.out.printf("S:%d, B:%d, O:%d\n", s, b, o);
 		
-		if(sCount == gameCnt) {
-			return false;
-		}
-		return true;
+		return s != gameCnt;
+		
 	}
 }
