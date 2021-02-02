@@ -5,9 +5,25 @@ import java.util.Scanner;
 public class ThrowsException {
 	
 	Scanner scan = new Scanner(System.in);
-	
-	void method1() throws Exception{
+
+	void method1() throws Exception {
 		int num = Integer.parseInt(scan.next());
+	}
+	void parseInputStrToInt() throws Exception {
+		System.out.print("숫자를 입력해주세요: ");
+		String str = scan.next();
+		int num;
+		num = Integer.parseInt(str);
+	
+	
+	
+	
+	
+	
+//	Scanner scan = new Scanner(System.in);
+//	
+//	void method1() throws Exception{
+//		int num = Integer.parseInt(scan.next());
 
 		
 		
