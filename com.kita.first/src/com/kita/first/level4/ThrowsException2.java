@@ -5,6 +5,7 @@ public class ThrowsException2 {
 		ThrowsException te =  new ThrowsException();
 		te.parseInputStrToInt();		
 //		try {
+//		
 //		} catch(Exception e) {
 //			
 //		}

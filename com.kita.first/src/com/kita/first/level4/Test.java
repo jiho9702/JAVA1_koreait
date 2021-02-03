@@ -24,8 +24,8 @@ public class Test {
 			void parentMethod() {};
 		});
 
-//		Parent p = new Child();
-//		p.parentMethod();
+		Parent p2 = new Child();
+		p2.parentMethod();
 
 //		ThrowsException2 te2 = new ThrowsException2();
 //		try {
